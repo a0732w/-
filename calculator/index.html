@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>计算器</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="calculator" role="application" aria-label="简单计算器">
+      <div class="display" aria-live="polite" aria-atomic="true">
+        <div id="history" class="display-history" aria-hidden="true"></div>
+        <div id="output" class="display-output" role="status">0</div>
+      </div>
+
+      <div class="keys" id="keys">
+        <button class="key key-func" data-action="clear" aria-label="全部清除">AC</button>
+        <button class="key key-func" data-action="delete" aria-label="删除一位">DEL</button>
+        <button class="key key-op" data-action="percent" aria-label="百分比">%</button>
+        <button class="key key-op" data-operator="/" aria-label="除以">÷</button>
+
+        <button class="key" data-digit="7">7</button>
+        <button class="key" data-digit="8">8</button>
+        <button class="key" data-digit="9">9</button>
+        <button class="key key-op" data-operator="*" aria-label="乘以">×</button>
+
+        <button class="key" data-digit="4">4</button>
+        <button class="key" data-digit="5">5</button>
+        <button class="key" data-digit="6">6</button>
+        <button class="key key-op" data-operator="-" aria-label="减去">−</button>
+
+        <button class="key" data-digit="1">1</button>
+        <button class="key" data-digit="2">2</button>
+        <button class="key" data-digit="3">3</button>
+        <button class="key key-op" data-operator="+" aria-label="加上">+</button>
+
+        <button class="key key-func" data-action="sign" aria-label="正负号">±</button>
+        <button class="key" data-digit="0">0</button>
+        <button class="key" data-action="decimal" aria-label="小数点">.</button>
+        <button class="key key-equals" data-action="equals" aria-label="等于">=</button>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
